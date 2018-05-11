@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+<meta charset="UTF-8">
+<title>Authenticate Vote</title>
+</head>
+<body>
+Insert Your Name
+<form action="#" th:action="@{/authenticateVote}" method="post">
+	<input type="text" name="name">
+	<input type="submit" value="submit">
+</form>
+
+Get Vote Count
+<form action="#" th:action="@{/voteResults}" method="post">
+	<input type=text name="name">
+	<input type="password" name="password">
+	<input type="submit" value="submit">
+</form>
+
+</body>
+</html>
